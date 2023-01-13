@@ -3,7 +3,7 @@
 Project Infos:
 * RazorClassLibraryWithManyAssets has about 1400 small asset files
 * Dependencies:
-    * BlazorApp1 -> RazorClassLibraryConsumer -> RazorClassLibrary1 -> RazorClassLibraryWithManyAssets
+    * BlazorApp1 -> IndirectConsumerClassLibrary -> DirectConsumerClassLibrary -> RazorClassLibraryWithManyAssets
 
 Scenario 1:
 * Make a little change in the ExampleJsInterop.cs of the RazorClassLibraryWithManyAssets project.
@@ -12,6 +12,6 @@ Scenario 1:
 
 
 Scenario 2:
-* Make a little change in the ExampleJsInterop.cs of the RazorClassLibrary1 project.
-* build RazorClassLibraryConsumer
-* Issue: the project with many assets is up to date, wasn't build, but the assets still affect the build time of the other project significantly
+* Make a little change in the ExampleJsInterop.cs of the DirectConsumerClassLibrary project.
+* build IndirectConsumerClassLibrary
+* Issue: the project with many assets is up to date and wasn't build, the final app is also not built, but the assets still affect the build time of the library projects significantly

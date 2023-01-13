@@ -7,6 +7,6 @@
 		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.10" />
 	</ItemGroup>
 	<ItemGroup>
-	  <ProjectReference Include="..\RazorClassLibrary1\RazorClassLibrary1.csproj" />
+	  <ProjectReference Include="..\RazorClassLibrary1\DirectConsumerClassLibrary.csproj" />
 	</ItemGroup>
 </Project>
