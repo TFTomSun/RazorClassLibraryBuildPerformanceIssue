@@ -1,5 +1,10 @@
 # RazorClassLibraryBuildPerformanceIssue
 
+Project Infos:
+* RazorClassLibraryWithManyAssets has about 1400 small asset files
+* Dependencies:
+    * BlazorApp1 -> RazorClassLibraryConsumer -> RazorClassLibrary1 -> RazorClassLibraryWithManyAssets
+
 Scenario 1:
 * Make a little change in the ExampleJsInterop.cs of the RazorClassLibraryWithManyAssets project.
 * build BlazorApp1
