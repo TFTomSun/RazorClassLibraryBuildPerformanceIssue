@@ -15,3 +15,9 @@ Scenario 2:
 * Make a little change in the ExampleJsInterop.cs of the DirectConsumerClassLibrary project.
 * build IndirectConsumerClassLibrary
 * Issue: the project with many assets is up to date and wasn't build, the final app is also not built, but the assets still affect the build time of the library projects significantly
+
+
+Scenario 3:
+* Increase the number of web assets by copying the root folder several times and/or increase the build hierarchy depth by introducing new razor class libraries
+* Do Scenario 1 and 2
+* Issue: The build times explode!

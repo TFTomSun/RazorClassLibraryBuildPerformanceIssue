@@ -16,6 +16,8 @@ namespace RazorClassLibraryWithManyAssets
 
 
 
+
+
     public class ExampleJsInterop
     { 
 
